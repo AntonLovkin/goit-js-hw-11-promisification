@@ -2,11 +2,17 @@
 // через ms миллисекунд.Значением исполнившегося промиса должно быть то кол - во миллисекунд
 // которое передали во время вызова функции delay.
 
+// const delay = ms => {
+//   // Твой код
+//  return new Promise ((resolve) => {
+//    resolve(ms);
+//  })
+// };
+
 const delay = ms => {
   // Твой код
- return new Promise ((resolve) => {
-   resolve(ms);
- })
+ return Promise.resolve(ms);
+ 
 };
 
 const logger = time => console.log(`Resolved after ${time}ms`);
